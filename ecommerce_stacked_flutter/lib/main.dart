@@ -1,9 +1,12 @@
+import 'package:ecommerce_stacked_flutter/app/locator.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
+//https://www.freecodecamp.org/news/flutter-stacked-architecture-todo-app/
+//https://liewjuntung.medium.com/stacked-architecture-in-flutter-dfb07528c0c4
 void main() {
-  // setupExampleLocator(environment: Environment.dev);
+  setupLocator();
   runApp(const MyApp());
 }
 
