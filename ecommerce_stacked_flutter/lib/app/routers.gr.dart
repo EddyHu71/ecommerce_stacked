@@ -17,19 +17,19 @@ class _$Routers extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
-    SplashView.name: (routeData) {
+    SplashViewRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
         routeData: routeData,
         child: const SplashView(),
       );
     },
-    LoginView.name: (routeData) {
+    LoginViewRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
         routeData: routeData,
         child: const LoginView(),
       );
     },
-    HomeView.name: (routeData) {
+    HomeViewRoute.name: (routeData) {
       return MaterialPageX<dynamic>(
         routeData: routeData,
         child: const HomeView(),
@@ -46,15 +46,15 @@ class _$Routers extends RootStackRouter {
           fullMatch: true,
         ),
         RouteConfig(
-          SplashView.name,
+          SplashViewRoute.name,
           path: '/splashScreen',
         ),
         RouteConfig(
-          LoginView.name,
+          LoginViewRoute.name,
           path: '/loginScreen',
         ),
         RouteConfig(
-          HomeView.name,
+          HomeViewRoute.name,
           path: '/homeScreen',
         ),
       ];
@@ -62,36 +62,36 @@ class _$Routers extends RootStackRouter {
 
 /// generated route for
 /// [SplashView]
-class SplashView extends PageRouteInfo<void> {
-  const SplashView()
+class SplashViewRoute extends PageRouteInfo<void> {
+  const SplashViewRoute()
       : super(
-          SplashView.name,
+          SplashViewRoute.name,
           path: '/splashScreen',
         );
 
-  static const String name = 'SplashView';
+  static const String name = 'SplashViewRoute';
 }
 
 /// generated route for
 /// [LoginView]
-class LoginView extends PageRouteInfo<void> {
-  const LoginView()
+class LoginViewRoute extends PageRouteInfo<void> {
+  const LoginViewRoute()
       : super(
-          LoginView.name,
+          LoginViewRoute.name,
           path: '/loginScreen',
         );
 
-  static const String name = 'LoginView';
+  static const String name = 'LoginViewRoute';
 }
 
 /// generated route for
 /// [HomeView]
-class HomeView extends PageRouteInfo<void> {
-  const HomeView()
+class HomeViewRoute extends PageRouteInfo<void> {
+  const HomeViewRoute()
       : super(
-          HomeView.name,
+          HomeViewRoute.name,
           path: '/homeScreen',
         );
 
-  static const String name = 'HomeView';
+  static const String name = 'HomeViewRoute';
 }

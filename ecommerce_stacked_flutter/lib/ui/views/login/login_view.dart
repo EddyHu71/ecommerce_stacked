@@ -1,4 +1,5 @@
 import 'package:ecommerce_stacked_flutter/ui/views/home/home_viewmodel.dart';
+import 'package:ecommerce_stacked_flutter/utils/utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
@@ -19,8 +20,13 @@ class LoginView extends StatelessWidget {
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
                   children: [
-                    Expanded(flex: 3, child: SizedBox()),
-                    Image.asset(""),
+                    const Expanded(flex: 3, child: SizedBox()),
+                    Image.asset(
+                      Utils.LOGO,
+                      width: MediaQuery.of(context).size.height * 0.3,
+                      height: MediaQuery.of(context).size.height * 0.3,
+                      fit: BoxFit.fill,
+                    ),
                     TextFormField(
                       initialValue: "Username",
                       keyboardType: TextInputType.text,
@@ -42,7 +48,7 @@ class LoginView extends StatelessWidget {
                           border: InputBorder.none,
                           prefixIcon: Icon(Icons.person)),
                     ),
-                    Expanded(flex: 1, child: SizedBox()),
+                    const Expanded(flex: 1, child: SizedBox()),
                   ],
                 ),
               ),
